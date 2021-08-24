@@ -1,0 +1,90 @@
+.title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 10px 25px 0;
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.1;
+    color: $font-black;
+  }
+}
+@import "../card-md3";
+@import "../card-md2";
+@import "../card-md4";
+@import "../slide";
+@import "../card-respons";
+.form {
+  margin: 30px 0;
+  padding: 30px 40px;
+  background-color: #fff;
+  .form-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.1;
+    color: $font-black;
+    margin-bottom: 5px;
+  }
+  .form-SubText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    color: $font-black;
+    opacity: 0.6;
+  }
+  .form-inner2 {
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  .form-input {
+    width: 60%;
+    border: none;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 8px 10px;
+    @media (max-width: 768px) {
+      width: 98%;
+      margin-top: 15px;
+    }
+    &:focus {
+      transition: all 0.4s;
+      outline: none;
+      box-shadow: 0 0 7px 0 dodgerblue;
+    }
+    &::placeholder {
+      line-height: 1.1;
+      color: $font-black;
+      opacity: 0.4;
+    }
+  }
+  .form-btn {
+    padding: 20px 80px;
+    background: #3d5e96;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    text-align: center;
+    color: $font-white;
+    border: none;
+    @media (max-width:768px) {
+      display: block;
+      width: 100%;
+      padding: 20px;
+    }
+    &:focus {
+      transition: all 0.4s;
+      outline: none;
+      background-color: #074cc4;
+      box-shadow: 0 0 7px 0 rgb(3, 97, 190);
+    }
+  }
+}

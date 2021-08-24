@@ -1,0 +1,36 @@
+.card-md2 {
+  display: block;
+  background: #ffffff;
+  padding: 25px 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  .card-md2-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .card-md2-content {
+    text-align: center;
+  }
+  .card-md2-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.1;
+    color: $font-black;
+    margin-bottom: 3px;
+  }
+  .card-md2-subTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    color: $font-black;
+    opacity: 0.4;
+    margin-bottom: 15px;
+  }
+  .card-md2-lastTitle {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.1;
+    color: #f6cf96;
+  }
+}

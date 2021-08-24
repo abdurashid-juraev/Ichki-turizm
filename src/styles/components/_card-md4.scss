@@ -1,0 +1,88 @@
+.card-md4 {
+  display: block;
+  height: 120px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #efc68b;
+  @media (max-width: 992px) {
+    height: 140px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    .card-shadow {
+      transition: all 0.4s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(63, 63, 173, 0.39);
+    }
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      105.27deg,
+      #000000 19.91%,
+      rgba(0, 0, 0, 0) 65.05%
+    );
+    opacity: 0.5;
+  }
+  .card-md4-content {
+    padding: 20px 0 0 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .card-md4-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.1;
+    color: $font-white;
+    margin-bottom: 3px;
+  }
+  .card-md4-subTitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    color: $font-white;
+    margin-bottom: 15px;
+    @media (max-width:992px) {
+      margin-bottom: 30px;
+    }
+  }
+  .card-md4-like {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    color: $font-white;
+    margin-left: 10px;
+  }
+  .user-like {
+    svg {
+      transition: all 0.2s;
+      stroke: white;
+      stroke-width: 30;
+      path {
+        fill: transparent;
+      }
+      &:hover {
+        stroke: red;
+        stroke-width: 30;
+        path {
+          fill: red;
+        }
+      }
+    }
+  }
+}
